@@ -1,0 +1,99 @@
+var emoji = new function(){
+	var self = this;
+	this.img_path = 'emoji/';
+	this.inits = {};
+	this.map = {};
+	this.text_mode = false;
+	this.include_title = false;
+	this.replace_colons = function(str){
+		self.init_colons();
+		return str.replace(self.rx_colons, function(m){
+			var idx = m.substr(1, m.length-2);
+			var val = self.map.colons[idx];
+			return val ? self.replacement(val) : m;
+		});
+	};
+	this.replace_unified = function(str){
+		self.init_unified();
+		return str.replace(self.rx_unified, function(m){
+			var val = self.map.unified[m];
+			return val ? self.replacement(val) : m;
+		});
+	};
+	this.replacement = function(idx){
+		var text_name = self.data[idx][4] || ':'+self.data[idx][3][0]+':';
+		if (self.text_mode) return text_name;
+		self.init_env();
+		if (self.replace_mode == 'unified'  && self.data[idx][0]) return self.data[idx][0];
+		if (self.replace_mode == 'softbank' && self.data[idx][1]) return self.data[idx][1];
+		if (self.replace_mode == 'google'   && self.data[idx][2]) return self.data[idx][2];
+		var img = self.img_path+idx+'.png';
+		var title = self.include_title ? ' title="'+self.data[idx][3][0]+'"' : '';
+		if (self.supports_css) return '<span class="emoji" style="background-image:url('+img+')"'+title+'>:'+self.data[idx][3][0]+':</span>';
+		return '<img src="'+img+'" class="emoji" '+title+'/>';
+	};
+	this.init_colons = function(){
+		if (self.inits.colons) return;
+		self.inits.colons = 1;
+		self.rx_colons = new RegExp('\:[^\\s:]+\:', 'g');
+		self.map.colons = {};
+		for (var i in self.data){
+			for (var j=0; j<self.data[i][3].length; j++){
+				self.map.colons[self.data[i][3][j]] = i;
+			}
+		}
+	};
+	this.init_unified = function(){
+		if (self.inits.unified) return;
+		self.inits.unified = 1;
+
+		var a = [];
+		for (var i in self.data) a.push(self.data[i][0]);
+		self.rx_unified = new RegExp('('+a.join('|')+')', "g");
+
+		self.map.unified = {};
+		for (var i in self.data){
+			self.map.unified[self.data[i][0]] = i;
+		}
+	};
+	this.init_env = function(){
+		if (self.inits.env) return;
+		self.inits.env = 1;
+		self.replace_mode = 'img';
+		self.supports_css = false;
+		var ua = navigator.userAgent;
+		if (window.getComputedStyle){
+			var st = window.getComputedStyle(document.body);
+			if (st['background-size'] || st['backgroundSize']){
+				self.supports_css = true;
+			}
+		}
+		if (ua.match(/(iPhone|iPod|iPad|iPhone\s+Simulator)/i)){
+			if (ua.match(/OS\s+[12345]/i)){
+				self.replace_mode = 'softbank';
+				return;
+			}
+			if (ua.match(/OS\s+[6789]/i)){
+				self.replace_mode = 'unified';
+				return;
+			}
+		}
+		if (ua.match(/Mac OS X 10[._ ][789]/i)){
+			if (!ua.match(/Chrome/i)){
+				self.replace_mode = 'unified';
+				return;
+			}
+		}
+		// Need a better way to detect android devices that actually
+		// support emoji.
+		if (false && ua.match(/Android/i)){
+			self.replace_mode = 'google';
+			return;
+		}
+		if (self.supports_css){
+			self.replace_mode = 'css';
+		}
+		// nothing fancy detected - use images
+	};
+	this.data = #DATA#;
+};

@@ -1,0 +1,11 @@
+{
+  "name": "js-emoji",
+  "homepage": "https://github.com/snicker/js-emoji",
+  "_release": "f25d8a303f",
+  "_resolution": {
+    "type": "commit",
+    "commit": "f25d8a303f"
+  },
+  "_source": "git://github.com/snicker/js-emoji.git",
+  "_target": "f25d8a303f"
+}

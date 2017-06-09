@@ -1,0 +1,35 @@
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew doctor
+brew install postgresql
+ brew services start postgresql
+psql
+whoami
+createdb
+createdb stephanimcgrath
+psql
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo $SHELL
+echo $BASH_VERSION
+ atom .
+ls
+lg
+ls
+lgprojects/
+ls
+cd lgprojects/
+ls
+cd brawney-frog-mouth/
+ls
+cd silentsoundz-brawny-frogmouth-wb/
+ls
+node
+bash
+echo hello
+echo 'hello 
+$echo 'hello
+$echo "hello
+echo hello
+echo "hello
+man echo
+man echo

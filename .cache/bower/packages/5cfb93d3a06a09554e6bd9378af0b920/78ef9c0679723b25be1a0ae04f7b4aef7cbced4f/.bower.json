@@ -1,0 +1,34 @@
+{
+  "name": "smart-app-banner",
+  "homepage": "https://github.com/glibin/smart-app-banner",
+  "authors": [
+    "glibin.v@gmail.com"
+  ],
+  "description": "Lightweight smart app banner with no jQuery (or any other framework) requirement.",
+  "main": "smart-app-banner.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "app",
+    "banner",
+    "android",
+    "ios"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "78ef9c0679",
+  "_resolution": {
+    "type": "commit",
+    "commit": "78ef9c0679723b25be1a0ae04f7b4aef7cbced4f"
+  },
+  "_source": "https://github.com/kudago/smart-app-banner.git",
+  "_target": "78ef9c0679723b25be1a0ae04f7b4aef7cbced4f"
+}

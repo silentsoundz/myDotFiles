@@ -1,0 +1,12 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    disabledPackages: [
+      "jade-bootstrap3-snippets"
+    ]
+    telemetryConsent: "no"
+  "exception-reporting":
+    userId: "f5bc543a-7086-4d91-8426-e6c4b33b771f"
+  welcome:
+    showOnStartup: false

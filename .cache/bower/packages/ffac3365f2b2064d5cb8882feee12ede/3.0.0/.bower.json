@@ -1,0 +1,13 @@
+{
+  "name": "github-buttons",
+  "homepage": "https://github.com/mdo/github-buttons",
+  "version": "3.0.0",
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.0",
+    "commit": "4d85ccb872d42a985560980cf56698e9f1ab3b0d"
+  },
+  "_source": "git://github.com/mdo/github-buttons.git",
+  "_target": "v3.0.0"
+}

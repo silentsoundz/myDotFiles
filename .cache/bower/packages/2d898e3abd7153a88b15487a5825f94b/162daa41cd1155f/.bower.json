@@ -1,0 +1,11 @@
+{
+  "name": "bootstrap-growl",
+  "homepage": "https://github.com/ifightcrime/bootstrap-growl",
+  "_release": "162daa41cd",
+  "_resolution": {
+    "type": "commit",
+    "commit": "162daa41cd1155f"
+  },
+  "_source": "git://github.com/ifightcrime/bootstrap-growl.git",
+  "_target": "162daa41cd1155f"
+}

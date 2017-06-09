@@ -1,0 +1,32 @@
+{
+  "name": "css-social-buttons",
+  "description": "Zocial CSS social buttons",
+  "keywords": [
+    "css",
+    "font",
+    "icon",
+    "social",
+    "zocial"
+  ],
+  "homepage": "http://zocial.smcllns.com/",
+  "main": [
+    "css/zocial.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*.json",
+    "*.yml",
+    "*.html",
+    "src/",
+    "templates/"
+  ],
+  "version": "1.1.1",
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.1",
+    "commit": "ce51748e9ae03b3fc6d65851a924c01f1660c9c8"
+  },
+  "_source": "git://github.com/samcollins/css-social-buttons.git",
+  "_target": "v1.1.1"
+}

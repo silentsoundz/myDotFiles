@@ -1,0 +1,223 @@
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew doctor
+brew install postgresql
+ brew services start postgresql
+psql
+whoami
+createdb
+createdb stephanimcgrath
+psql
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo $SHELL
+echo $BASH_VERSION
+ atom .
+ls
+lg
+ls
+lgprojects/
+ls
+cd lgprojects/
+ls
+cd brawney-frog-mouth/
+ls
+cd silentsoundz-brawny-frogmouth-wb/
+ls
+node
+bash
+echo hello
+echo 'hello 
+$echo 'hello
+$echo "hello
+echo hello
+echo "hello
+man echo
+man echo
+grep foobar
+cat
+man
+man echo
+ls
+lgprojects/
+ls
+lgprojects/
+brawny-frogmouth
+cd lgprojects/
+ls
+cd brawney-frog-mouth/
+ls
+cd silentsoundz-brawny-frogmouth-wb/
+atom .
+zsh
+man echo
+echo -n ['hello']
+echo -n [hello]
+bash
+echo -n fee
+echo fee
+echo fie
+echo foe
+echo fum
+$ echo "From fairest creatures we desire increase,"
+echo 'Use "man echo"'
+'echo use "man echo"'
+echo "use "man echo""
+man sleep
+echo sleep 5 seconds
+sleep 5s
+sleep 5000s
+sleep(5)
+sleep 5
+sleep 5
+sleep5
+echo echo "From fairest creatures we desire increase,"
+echo "From fairest creatures we desire increase,"
+echo "From fairest creatures we desire increase,"> sonnet_1.txt
+cat sonnet_1.txt
+echo "From fairest creatures we desire increase,">> sonnet_1.txt
+cat sonnet_1.txt
+echo "that thereby beauty's rose might never die'>> sonnet_1.txt
+cat sonnet_1.txt
+
+echo "From fairest creatures we desire increase,"> sonnet_1.txt
+cat sonnet_1.txt
+
+q
+
+echoecho "That thereby beauty's Rose might never die," >> sonnet_1.txt
+echo "That thereby beauty's Rose might never die," >> sonnet_1.txt
+cat sonnet_1.txt
+echo "From fairest creatures we desire increase,"> sonnet_1_lower_case.txt
+echo "That thereby beauty's Rose might never die," >> sonnet_1_lower_case.txt
+diff sonnet_1.txt sonnet_1_lower_case.txt
+bash
+bash
+echo "From fairest creatures we desire increase,"> line_1.txt
+echo "That thereby beauty's Rose might never die,"> line_2.txt
+echo "From fairest creatures we desire increase,"> sonnet_1_cody.txt
+echo "That thereby beauty's Rose might never die,">> sonnet_1_copy.txt
+diff sonnet_1_copy.txt sonnet_1.txt
+ls s*
+ls -a "*onnet*"
+ls -rlt *oennt*
+ls -rlt 
+ls *onnet*
+ls -rlt *onnet*
+ls -trl *onnet*
+ls -a -rlt
+ls -arlt
+ls -artl
+ls -a -rtl
+q
+ls
+ls -a -rtl
+ls
+ls -artl
+echo "test text" > test
+mv test test_file.txt
+ls
+cat test_file.txt 
+cp test_file.txt second_test.txt
+ls
+cat second_test.txt 
+rm second_test.txt
+ls second_test.txt
+man rm
+rm -f * .txt
+ls
+echo "hello world" > foo.txt
+ls
+cp foo.txt bar.txt
+diff foo.txt bar.txt
+cat foo.txt > baz.txt
+cat quux.txt > foo.txt >>bar.txt
+cat foo.txt > quux.txt >>bar.tx
+cat quux.txt
+cat foo.txt
+ls
+diff foo.txt quux.txt
+cat quux.txt
+echo "hello world" > foo.txt
+cat foo.txt
+cp foo.txt bar.txt
+cat bar.txt
+diff foo.txt bar.txt
+cat foo.txt > bar.txt
+cat bar.txt
+cat foo.txt > quux.txt >>bar.txt
+cat quux.txt
+cat foo.txt bar.txt > quux.txt
+cat quux.txt 
+echo "FRom faireſt creatures we deſire increaſe,
+That thereby beauties Roſe might neuer die,
+But as the riper ſhould by time deceaſe,
+His tender heire might beare his memory:
+But thou contracted to thine owne bright eyes,
+Feed’ſt thy lights flame with ſelfe ſubſtantiall fewell,
+Making a famine where aboundance lies,
+Thy ſelfe thy foe,to thy ſweet ſelfe too cruell:
+Thou that art now the worlds freſh ornament,
+And only herauld to the gaudy ſpring,
+Within thine owne bud burieſt thy content,
+And tender chorle makſt waſt in niggarding:
+   Pitty the world,or elſe this glutton be,
+   To eate the worlds due,by the graue and thee.
+echo "FRom faireſt creatures we deſire increaſe,
+That thereby beauties Roſe might neuer die,
+But as the riper ſhould by time deceaſe,
+His tender heire might beare his memory:
+But thou contracted to thine owne bright eyes,
+Feed’ſt thy lights flame with ſelfe ſubſtantiall fewell,
+Making a famine where aboundance lies,
+Thy ſelfe thy foe,to thy ſweet ſelfe too cruell:
+Thou that art now the worlds freſh ornament,
+And only herauld to the gaudy ſpring,
+Within thine owne bud burieſt thy content,
+And tender chorle makſt waſt in niggarding:
+   Pitty the world,or elſe this glutton be
+
+exit
+echo 'FRom faireſt creatures we deſire increaſe,
+That thereby beauties Roſe might neuer die,
+But as the riper ſhould by time deceaſe,
+His tender heire might beare his memory:
+But thou contracted to thine owne bright eyes,
+Feed’ſt thy lights flame with ſelfe ſubſtantiall fewell,
+Making a famine where aboundance lies,
+Thy ſelfe thy foe,to thy ſweet ſelfe too cruell:
+Thou that art now the worlds freſh ornament,
+And only herauld to the gaudy ſpring,
+Within thine owne bud burieſt thy content,
+And tender chorle makſt waſt in niggarding:
+   Pitty the world,or elſe this glutton be,
+   To eate the worlds due,by the graue and thee.' > sonnet_1_complete.txt
+cat sonnet_1_complete.txt 
+touch foo
+mv foo bar
+cp bar bazz
+ls *b
+ls -a *b
+ls b*
+rm bar bazz
+ls
+which curl
+curl -OL cdn.learnenough.com/sonnets.txt
+ls -rtl
+curl -OL cdn.learnenough.com/sonnets.txt
+curl -OL cdn.learnenough.com/sonnets.txt
+ls rlt
+ls -rtl
+cat sonnets.txt
+curl -I https://www.learnenough.com/sonnets.txt
+ls
+ls -l
+ls -h
+ls 
+ls -l
+ls -h
+zsh
+diff sonnet_1_copy.txt sonnet_1.txt
+diff sonnet_1_copy.txt_sonnet_1.txt
+ls
+..
+zsh

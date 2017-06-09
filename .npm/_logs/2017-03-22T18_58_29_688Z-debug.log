@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@4.4.1
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree !invalid#1
+22 silly idealTree !invalid#1
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 silly generateActionsToTake Finishing
+26 silly diffTrees action count 0
+27 silly decomposeActions action count 0
+28 silly runTopLevelLifecycles Starting
+29 silly install runPreinstallTopLevelLifecycles
+30 silly preinstall !invalid#1
+31 info lifecycle undefined~preinstall: undefined
+32 silly lifecycle undefined~preinstall: no script for preinstall, continuing
+33 silly executeActions Starting
+34 silly install executeActions
+35 silly doSerial global-install 0
+36 silly doParallel fetch 0
+37 verbose correctMkdir /Users/stephanimcgrath/.npm/_locks correctMkdir not in flight; initializing
+38 verbose lock using /Users/stephanimcgrath/.npm/_locks/staging-781faa38490e6896.lock for /node_modules/.staging
+39 verbose unlock done using /Users/stephanimcgrath/.npm/_locks/staging-781faa38490e6896.lock for /node_modules/.staging
+40 silly rollbackFailedOptional Starting
+41 silly rollbackFailedOptional Finishing
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 warn enoent ENOENT: no such file or directory, open '/package.json'
+45 verbose enoent ENOENT: no such file or directory, open '/package.json'
+45 verbose enoent This is most likely not a problem with npm itself
+45 verbose enoent and is related to npm not being able to find a file.
+46 warn !invalid#1 No description
+47 warn !invalid#1 No repository field.
+48 warn !invalid#1 No README data
+49 warn !invalid#1 No license field.
+50 verbose stack Error: EACCES: permission denied, mkdir '/node_modules/.staging'
+50 verbose stack     at Error (native)
+51 verbose cwd /
+52 verbose Darwin 16.4.0
+53 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+54 verbose node v6.10.0
+55 verbose npm  v4.4.1
+56 error path /node_modules/.staging
+57 error code EACCES
+58 error errno -13
+59 error syscall mkdir
+60 error Error: EACCES: permission denied, mkdir '/node_modules/.staging'
+60 error     at Error (native)
+60 error  { Error: EACCES: permission denied, mkdir '/node_modules/.staging'
+60 error     at Error (native)
+60 error   errno: -13,
+60 error   code: 'EACCES',
+60 error   syscall: 'mkdir',
+60 error   path: '/node_modules/.staging' }
+61 error Please try running this command again as root/Administrator.
+62 verbose exit [ -13, true ]

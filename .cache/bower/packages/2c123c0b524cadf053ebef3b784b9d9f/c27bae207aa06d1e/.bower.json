@@ -1,0 +1,11 @@
+{
+  "name": "Angular-At-Directive",
+  "homepage": "https://github.com/snicker/Angular-At-Directive",
+  "_release": "c27bae207a",
+  "_resolution": {
+    "type": "commit",
+    "commit": "c27bae207aa06d1e"
+  },
+  "_source": "git://github.com/snicker/Angular-At-Directive.git",
+  "_target": "c27bae207aa06d1e"
+}
